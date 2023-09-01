@@ -1,7 +1,6 @@
 import discord
 from discord.ext import commands
 from discord.ext.commands import Context
-from discord import Guild
 import os
 from dotenv import load_dotenv
 
@@ -19,7 +18,7 @@ bot = commands.Bot(intents=intents)
 bot.event_message_ids = []
 
 
-def get_role_id_by_name(guild: Guild, role_name):
+def get_role_id_by_name(guild, role_name):
     role = discord.utils.get(guild.roles, name=role_name)
     return role.id if role else None
 
@@ -70,7 +69,7 @@ class EventCog(commands.Cog):
 
 
 class ReactionRoleCog(commands.Cog):
-    def __init__(self, bot):
+    def __init__(self, bot: commands.Bot):
         self.bot = bot
         self.bot.loop.create_task(self.setup_roles())
 
