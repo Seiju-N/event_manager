@@ -6,7 +6,7 @@ from dotenv import load_dotenv
 load_dotenv()
 
 GUILD_ID = int(os.environ["GUILD_ID"])
-BOT_TOKEN = os.environ["DISCORD_BOT_TOKEN"]
+BOT_TOKEN = os.environ["BOT_TOKEN"]
 ROLE_NAME_ADMIN = os.environ["ROLE_NAME_ADMIN"]
 ROLE_NAME_JOIN = os.environ["ROLE_NAME_JOIN"]
 ROLE_NAME_SPEC = os.environ["ROLE_NAME_SPEC"]

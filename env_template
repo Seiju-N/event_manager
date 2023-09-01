@@ -1,0 +1,6 @@
+GUILD_ID=""
+BOT_TOKEN=""
+
+ROLE_NAME_ADMIN = "イベント管理者"
+ROLE_NAME_JOIN = "イベント参加者"
+ROLE_NAME_SPEC = "イベント観戦者"
